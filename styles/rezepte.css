@@ -1,0 +1,147 @@
+
+/* #zettelZ {
+  width: 60%;
+  display: block;
+  margin: .5cm auto;
+} */
+
+#bild {
+  background: url("/imgs/rezepte/schokotomatespinatei.jpg");
+  width: 90%;
+  padding-top: 45%;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -.75cm;
+}
+
+#bild > span:not(#mehrLesen) {
+    position: absolute;
+    font-size: 3vw;
+    width: 100%;
+    text-align: center;
+    color: var(--pappe);
+    font-family: "TrashHand";
+}
+
+#bild > span:nth-child(1) {
+  /* color: red; */
+  top: 85%;
+  right: 5%;
+}
+
+#bild > #mehrLesen {
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  left: 50%;
+  font-size: 2vmin;
+  cursor: pointer;
+}
+
+#textExpand {
+  background-color: var(--pappe);
+  width: 90%;
+  margin: 0 auto;
+  max-height: 25vh;
+  transition: all 2s;
+  /* transition: padding 2s; */
+  overflow: hidden;
+  text-align: center;
+  padding: 1cm;
+}
+#textExpand.closed {
+  max-height: 0;
+  padding: 0;
+}
+
+
+p {
+  margin-top: 1cm;
+  color: var(--pappe);
+  text-align: center;
+}
+
+#recipeContainer {
+  margin-top: 1cm;
+  display: flex;
+  flex-direction: column;
+}
+
+#recipeContainer > .recipe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  /* grid-gap: 10px; */
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1cm;
+  grid-template-areas: "image text";
+  position: relative;
+}
+
+#recipeContainer > .recipe:nth-child(even) {
+  grid-template-areas: "text image";
+}
+
+#recipeContainer > .recipe > .text {
+  background-color: var(--pappe);
+  padding: 10px;
+  grid-area: text;
+}
+
+#recipeContainer > .recipe img {
+  width: 100%;
+  grid-area: image;
+}
+#recipeContainer > .recipe * {
+  color:  var(--gray);
+  position: relative;
+}
+#recipeContainer > .recipe > div > h3 {
+  font-size: 7vmin;
+  text-align: center;
+  margin-top: 20%;
+  font-weight: 300;
+  font-family: "TrashHand";
+}
+#recipeContainer > .recipe > div > a {
+  padding: 1vmin;
+  /* background-color: var(--pappe_darken); */
+  border: 1px solid #333;
+  text-decoration: none;
+  font-weight: 200;
+  font-style: italic;
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30%;
+  font-size: 3vmin;
+  transition: background-color .5s;
+}
+#recipeContainer > .recipe > div > a > span {
+  font-family: "TrashHand";
+  font-size: 4vmin;
+}
+#recipeContainer > .recipe > div > a:hover {
+  /* background-color: #999; */
+  /* color: #ddd; */
+}
+#recipeContainer > .recipe:hover > div > a {
+  /* border-color: #111; */
+}
+#recipeContainer > .recipe > div > .tags {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#recipeContainer > .recipe > div > .tags > * {
+  margin: 0 5px;
+  font-size: 2vmin;
+}

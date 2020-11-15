@@ -1,0 +1,79 @@
+#bild {
+  background: url("/imgs/nicole_jette/n&j.jpg");
+  width: 90%;
+  padding-top: 45%;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  margin-top: .75cm;
+}
+
+#bild > span:not(#mehrLesen) {
+    position: absolute;
+    font-size: 6vmin;
+    width: 100%;
+    text-align: center;
+    color: var(--pappe);
+    /* right: 7.5%; */
+}
+
+#bild > span:nth-child(1) {
+  /* color: red; */
+  top: 80%;
+}
+
+#bild > #mehrLesen {
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  left: 50%;
+  font-size: 2vmin;
+  cursor: pointer;
+}
+
+
+#textContainer {
+  margin-top: 1cm;
+  display: flex;
+  flex-direction: column;
+  /* scroll-snap-type: y mandatory; */
+}
+
+#textContainer > .item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  /* grid-gap: 10px; */
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1cm;
+  grid-template-areas: "image text";
+  position: relative;
+  /* scroll-snap-align: start; */
+}
+
+#textContainer > .item:nth-child(odd) {
+  grid-template-areas: "text image";
+}
+#textContainer > .item > .text {
+  background-color: var(--pappe);
+  grid-area: text;
+  text-align: center;
+  position: relative;
+}
+#textContainer > .item > .text > div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 1cm;
+}
+#textContainer > .item > .text > div > h3 {
+  font-size: 3em;
+}
+
+#textContainer > .item img {
+  width: 100%;
+  grid-area: image;
+}

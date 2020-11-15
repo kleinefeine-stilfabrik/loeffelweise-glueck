@@ -1,0 +1,38 @@
+
+#logo {
+  width: 10vw;
+  margin-top: 2vw;
+  margin-left: 50vw;
+  transform: translate(-50%);
+}
+
+
+
+
+#hobelbankHeaderContainer {
+  position: relative;
+  width: 80%;
+  display: block;
+  margin: 1.5cm auto;
+}
+
+#hobelbankHeader {
+  width: 100%;
+}
+
+#hobelbankHeaderContainer > span {
+  position: absolute;
+  /* top: 47.8vh; */
+  /* top: 87%; */
+  bottom: 2%;
+  /* left: 51.5vw; */
+  left: 35%;
+  /* transform: translate(-50%); */
+  font-size: 4.4vmin;
+  color: var(--gray);
+}
+
+#footer > span {
+  float: right;
+  color: var(--pappe);
+}

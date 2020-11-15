@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Tomaten-Marmelade",
+    "link": "tomaten-marmelade",
+    "imglink": "tomatenmarmelade.jpg",
+    "tags": [
+      "Marmelade",
+      "Tomaten"
+    ],
+    "zutaten": [
+      "1 kg unterschiedlichte Tomaten Sorten",
+      "1 Bio-Zitrone"
+    ]
+  },
+  {
+    "name": "Apfel-Marmelade",
+    "link": "apfel-marmelade",
+    "imglink": "tomatenmarmelade.jpg",
+    "tags": [
+      "Apfel",
+      "Tomaten"
+    ],
+    "zutaten": [
+      "1 kg unterschiedlichte Tomaten Sorten",
+      "1 Bio-Zitrone"
+    ]
+  }
+]

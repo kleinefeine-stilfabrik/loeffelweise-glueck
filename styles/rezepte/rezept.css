@@ -1,0 +1,8 @@
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+  grid-gap: 1vmin;
+  margin-top: 2.5vmin;
+}

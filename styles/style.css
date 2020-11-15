@@ -1,0 +1,51 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:wght@200..900";
+@import "https://fonts.googleapis.com/css?family=Marmelad:wght@200..900";
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:wght@200..900");
+
+@font-face {
+  font-family: "TrashHand";
+  font-style: normal;
+  src: url("/webfonts/TrashHand.TTF")
+}
+
+:root {
+  --pappe: #B89172;
+  --pappe_darken: #917966;
+  --gray: #222;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+  /* background-color: #424242; */
+  background-color: var(--gray);
+}
+
+#navbar {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar > * {
+  color: var(--pappe);
+  text-decoration: none;
+  margin: 0 2vw;
+  transition: color .2s;
+  font-size: 3vmin;
+  font-family: 'TrashHand';
+}
+#navbar > *:hover {
+  color: var(--pappe_darken);
+}
+
+#navbar > a[href="#"] {
+  color: white;
+}

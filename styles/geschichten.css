@@ -1,0 +1,96 @@
+#bild {
+  background: url("/imgs/geschichten/fotoalbum.jpg");
+  width: 90%;
+  padding-top: 45%;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  margin-top: .75cm;
+}
+
+#bild > span:not(#mehrLesen) {
+    position: absolute;
+    font-size: 6vmin;
+    width: 100%;
+    text-align: center;
+    color: var(--pappe);
+}
+
+#bild > span:nth-child(1) {
+  /* color: red; */
+  top: 85%;
+}
+
+#bild > #mehrLesen {
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  left: 50%;
+  font-size: 2vmin;
+  cursor: pointer;
+}
+
+#textExpand {
+  background-color: var(--pappe);
+  width: 90%;
+  margin: 0 auto;
+  max-height: 25vh;
+  transition: all 2s;
+  /* transition: padding 2s; */
+  overflow: hidden;
+  text-align: center;
+  padding: 1cm;
+  margin-bottom: 1cm;
+}
+#textExpand.closed {
+  max-height: 0;
+  padding: 0;
+}
+
+#geschichtenContainer {
+  margin-top: 1cm;
+  display: flex;
+  flex-direction: column;
+  /* scroll-snap-type: y mandatory; */
+}
+
+#geschichtenContainer > .geschichte {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  /* grid-gap: 10px; */
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1cm;
+  grid-template-areas: "image text";
+  position: relative;
+  /* scroll-snap-align: start; */
+}
+
+#geschichtenContainer > .geschichte:nth-child(even) {
+  grid-template-areas: "text image";
+}
+#geschichtenContainer > .geschichte > .text {
+  background-color: var(--pappe);
+  grid-area: text;
+  text-align: center;
+  position: relative;
+}
+#geschichtenContainer > .geschichte > .text > .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 1cm;
+  max-height: 80%;
+  /* overflow-y: auto; */
+}
+#geschichtenContainer > .geschichte > .text > .content .simplebar-content > h3 {
+  font-size: 3em;
+}
+
+#geschichtenContainer > .geschichte img {
+  width: 100%;
+  grid-area: image;
+}
