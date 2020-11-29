@@ -49,3 +49,13 @@ body {
 #navbar > a[href="#"] {
   color: white;
 }
+
+div.scrollTop {
+  position: fixed;
+  right: 2vmin;
+  bottom: 2vmin;
+  font-size: 2.5vw;
+  /* color: var(--pappe); */
+  color: white;
+  cursor: pointer;
+}

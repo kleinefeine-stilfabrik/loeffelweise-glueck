@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/löffelfreunde.css">
     <script src="/scripts/textExpand.js" defer charset="utf-8"></script>
     <script src="/scripts/löffelfreunde.js" defer charset="utf-8"></script>
+    <script src="/scripts/scrollTop.js" defer charset="utf-8"></script>
   </head>
   <body>
     <div id="navbar">
@@ -20,7 +21,7 @@
     </div>
     <div id="bild">
       <span>Freude und Freunde - sooooo wichtig!</span>
-      <span id="mehrLesen">mehr lesen <br> <i class="fab fa-readme"></i></span>
+      <span id="mehrLesen">mehr lesen <br> <i class="fas fa-utensil-spoon"></i></span>
     </div>
     <div id="textExpand" class="closed">
       Freude mit Freunden, FREUDE am Löffeln, FREUNDE, mit denen wir gemeinsam Löffeln - hoffentlich nicht die Suppe aus...<br>
@@ -37,7 +38,7 @@
           <img src="/imgs/löffelfreunde/zuccini.jpg" alt="">
         </div>
         <div class="text">
-          <div class="">
+          <div class="content">
             <h3>OPAS GARTEN</h3><br>
             <br>
             Alles, was unsere Genießerherzen höher schlagen lässt, wächst in Nachbars Garten. <br>
@@ -61,7 +62,7 @@
       <div class="item">
         <img src="/imgs/löffelfreunde/bowls.jpg" alt="">
         <div class="text">
-          <div class="">
+          <div class="content">
             <h3>BOWLS</h3><br>
             <br>
             Modetrend oder Food mit Zukunft?<br>
@@ -82,29 +83,22 @@
       <div class="item">
         <img src="/imgs/löffelfreunde/podcast.jpg" alt="">
         <div class="text">
-          <div class="">
-            <h3>!!! ÄNDERN !!!</h3><br>
+          <div class="content">
+            <h3>Ein Podcast zum One Pot!</h3><br>
             <br>
-            Modetrend oder Food mit Zukunft?<br>
-            Ganz egal! Wir essen einfach gern aus Schalen: damals, heute und morgen!<br>
-            <br>
-            Nicole erinnert sich noch gut daran, wie sich bei ihrer Oma alle Enkelkinder rund um den großen Tisch versammelten
-            und GEMEINSAM aus der großen Schüssel oder der Pfanne aus der Mitte löffelten. Es war himmlisch, dieses Zusammengehörigkeitsgefühl!<br>
-            Und so ist es noch heute: Gern serviert sie ein Gericht in SCHALE oder SCHÜSSEL, hat es doch gleich etwas Wohltuendes.
-            HERZBERÜHRENDES. Die Hände umschließen die sanfte Form, ein einziger Blick ins Innere nimmt auf, was sich Besonderes darin
-            befindet und all das hat man ganz für sich allein... <br>
-            Die perfekte Harmonie der Texturen, cremig-weich, verbunden mit knackig-kernig.<br>
-            Die nährstoffreichen BOWLS enthalten alles, was wir lieben: <br>
-            Kräuter, Samen, Kerne & Dressings im Frühling und Sommer,<br>
-            One-Pot-Gerichte, Wärme in Herbst und Winter - LÖFFELWEISE GLÜCK!
+            Warum das locker geht? <br>
+            Anders als die klassichen Eintopfgerichte kommen die modernen One Pots mit wenig Geschnippel und kurzen Garzeiten aus: <br>
+            Ein Pott, ein paar frische, gesunde Zutaten & ein Viertelstündchen Zeit - fertig! <br>
+            Dabei kann der "One Pot" ein Topf, eine Pfanne, ein Wok, ein Blech oder eine Auflaufform sein. Ein Topf für unendlich viele Möglichkeiten. Vielfalt als Programm. Sie heißen Eintopf, Suppe, Risotto, Paella, Pilaw... Herzhaft oder süß, vegan oder mit Fleisch, traditionell oder exotisch. Immer sind sie super lecker! Entscheidend sind die richtigen Mengenverhältnisse, damit Pasta und Sauce perfekt harmonieren, der Reis weich und die Suppe sämig ist. Flüssigkeit stets LÖFFELWEISE <br> nachdosieren. One Pot Wonders sind etwas für Gesundheitsbewusste und Fast-Food-Fans, für Besser-Esser und Abspülmuffel... und natürlich für Podcast-Liebhaber. Denn weil der Abwasch schnell gemacht ist, bleibt viel Zeit für schöne Geschichten aus dem Netz. Hört doch einmal hinein und setzt euch mit Thorsten Otto auf "die blaue Couch". Kurzweilige Interviews mit Sterneköchen, Winzern, Fotografen, Glücksforschern, Musikern, Rinderzüchtern, Krimiautoren, Goldgräbern, Abenteurern, <br> Schäfern, Förstern, Wiesnwirten, Brauerei-Chefinnen, Sennerinnen, Weltreisenden, Psychologen, Stylisten,.... unterhalten an Herd und Tisch. Amüsant wird's in "Fiete Gastro" - Moderator Sebastian Merget begrüßt Tim Mälzer und einen weiteren "kulinarischen" Gast, nachdem Tim ihn erraten hat. Von Jan Eißmann lernen wir im "Weinstein Podcast" viel Wissenswertes über den edlen Rebsaft, seine Beschreibungen und vielleicht sogar über unsere persönlichen Vorlieben. Zuhören und mitkochen - <br> Spitzenköchin Maria Groß und Schauspielerin Elena Uhlig laden in "Groß & Fett" zum Mitmachen ein, inspirierend... <br>
+            Übrigens: POD steht für Play On Demand (auf Abruf abspielen). CAST ist die Abkürzung BroadCAST (Rundfunk). Die Medienbeiträge, vergleichbar mit einer Hörfunksendung, können über Mediaplayer -meist kostenlos- beliebig abgespielt werden. Es gibt sie zu vielen verschiedenen Themen. Welch GLÜCK für uns... <br>
           </div>
         </div>
       </div>
       <div class="item">
         <img src="/imgs/löffelfreunde/evergreens.jpg" alt="">
         <div class="text">
-          <div class="">
-            <h3>UPDATES<br> FÜR EVERGREENS -</h3><br>
+          <div class="content">
+            <h3>UPDATES<br> FÜR EVERGREENS</h3><br>
             <br>
             Aprikose, Ingwer, Schokolade...<br>
             <br>
@@ -114,6 +108,49 @@
             Ein Linseneintopf schmeckt mit Aprikosen-Gremolata viel fruchtiger, die Tomatensauce mit Ingwer gesünder und
             das Chili con Carne mit SCHOKOLADE vollmundiger. <br>
             Probiert es einfach aus und genießt LÖFFELWEISE GLÜCK!
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="/imgs/löffelfreunde/schokolöffel.jpg" alt="">
+        <div class="text">
+          <div class="content">
+            <h3>Löffelweise Weihnachtsglück</h3><br>
+            <br>
+            Rezept für ganz viel Weihnachtsglück <br>
+            <br>
+            Zutaten: <br>
+            Ein Löffel Herzenswärme <br>
+            Ein Päckchen Liebe <br>
+            Ein Gramm Vorfreude <br>
+            Eine große Portion Versöhnlichkeit <br>
+            Eine Handvoll guter Wünsche <br>
+            Ein Hauch Besinnlichkeit <br>
+            <br>
+            Zubereitung: <br>
+            Alle Zutaten tief im Herzen bewegen <br>
+            und mit lieben Menschen teilen. <br>
+            <br>
+            DIY: <br>
+            Man benötigt: <br>
+            Holzlöffel <br>
+            Washi Tape <br>
+            Fineliner schwarz <br>
+            Zartbitter-Schokolade <br>
+            Weiße Schokolade <br>
+            diverse Schokostreusel <br>
+            <br>
+            ggfs. <br>
+            Cellophantüten <br>
+            Tannenzweige <br>
+            Architektenpapier oder farbiges Papier <br>
+            Schleifenband <br>
+            <br>
+            Die Stiele der Löffel mit hübschen Worten beschriften, z.B. Schneeflocke, Kaminfeuer, Winter, Schlittenfahrt, Glöckchen, Engel, ... Mit Streifen von Washi-Tape einrahmen. Schokoladen in verschiedenen Schalen im Wasserbad schmelzen und die Löffel mehrfach nach Farben sortiert eintauchen, bis eine dicke Schicht entsteht. Ist ausreichend Schoki aufgetragen, die Mulden mit Streuseln oder Schokoladenfäden anderer Farben verzieren, trocknen lassen. <br>
+            <br>
+            Weihnachtsglück-Spruch entweder mit Hand oder per Drucker auf das Papier bringen, ausschneiden, aufrollen. Löffel in die Tüte stecken, mit Schleifenband, Tannengrün und Papierrolle verschließen. <br>
+            <br>
+            Diese kleinen Präsente sind tolle Mitbringsel in der Weihnachtszeit, unerwartete Überraschungen für Nachbarn, Arbeitskollegen und den Postboten. Schreibt man auf die Löffel die Namen eingeladener Gäste, machen sie sich auch prima als Platzkarten. Der Espresso zum Nachtisch erhält beim Umrühren einen mit Liebe zubereiteten Flavour. <br>
           </div>
         </div>
       </div>

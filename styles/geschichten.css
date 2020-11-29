@@ -14,6 +14,7 @@
     width: 100%;
     text-align: center;
     color: var(--pappe);
+    font-family: "TrashHand";
 }
 
 #bild > span:nth-child(1) {
@@ -88,6 +89,7 @@
 }
 #geschichtenContainer > .geschichte > .text > .content .simplebar-content > h3 {
   font-size: 3em;
+  font-family: "TrashHand";
 }
 
 #geschichtenContainer > .geschichte img {

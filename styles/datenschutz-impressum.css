@@ -1,0 +1,40 @@
+#container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: auto auto;
+  height: calc(100vh - 20px);
+  width: calc(100vw - 20px);
+  grid-template-areas: "impressum datenschutz"
+                                    "links datenschutz";
+  grid-gap: 10px;
+  margin: 10px;
+  overflow-y: hidden;
+}
+
+#container > div {
+  background-color: var(--pappe);
+  text-align: center;
+  position: relative;
+}
+#container > div > .content {
+  max-height: 90%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 1cm;
+}
+#container > div > .content h3 {
+  font-size: 3em;
+  font-family: "TrashHand";
+}
+
+.impressum {
+  grid-area: impressum;
+}
+.links {
+  grid-area: links;
+}
+.datenschutz {
+  grid-area: datenschutz;
+}

@@ -6,7 +6,7 @@ scrollStyle.rel = 'stylesheet';
 document.head.appendChild(scrollScript);
 document.head.appendChild(scrollStyle);
 
-const scrollContainers = document.querySelectorAll('#geschichtenContainer > .geschichte > .text > div');
+const scrollContainers = document.querySelectorAll('#textContainer > .item > .text > .content');
 
 scrollScript.addEventListener("load", () => {
   scrollContainers.forEach(scr => {

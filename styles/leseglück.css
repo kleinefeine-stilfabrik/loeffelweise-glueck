@@ -14,12 +14,13 @@
     /* width: 100%; */
     text-align: center;
     color: var(--pappe);
+    font-family: "TrashHand";
 }
 
 #bild > span:nth-child(1) {
   /* color: red; */
   top: 85%;
-  left: 50%;
+  right: 2.5%;
 }
 
 #bild > #mehrLesen {

@@ -6,8 +6,10 @@ sliders.forEach(sl => {
   changeImg(0);
   const back = document.createElement('span');
   const next = document.createElement('span');
-  back.innerHTML = `<i class="fas fa-chevron-left"></i>`;
-  next.innerHTML = `<i class="fas fa-chevron-right"></i>`;
+  back.innerHTML = `<i class="fas fa-utensil-spoon"></i>`;
+  next.innerHTML = `<i class="fas fa-utensil-spoon"></i>`;
+  // back.innerHTML = `<i class="fas fa-chevron-left"></i>`;
+  // next.innerHTML = `<i class="fas fa-chevron-right"></i>`;
   back.classList.add('back');
   next.classList.add('next');
   sl.appendChild(back);
@@ -22,4 +24,22 @@ sliders.forEach(sl => {
     imgs.forEach(img => img.classList.add('hidden'));
     imgs[index].classList.remove('hidden');
   }
+});
+
+const scrollScript = document.createElement('script');
+scrollScript.src = '/lib/simplebar.js';
+const scrollStyle = document.createElement('link');
+scrollStyle.href = '/lib/simplebar.css';
+scrollStyle.rel = 'stylesheet';
+document.head.appendChild(scrollScript);
+document.head.appendChild(scrollStyle);
+
+const scrollContainers = document.querySelectorAll('#itemContainer > .item > .text > .content');
+
+scrollScript.addEventListener("load", () => {
+  scrollContainers.forEach(scr => {
+    new SimpleBar(scr, {
+      autoHide: false
+    });
+  });
 });

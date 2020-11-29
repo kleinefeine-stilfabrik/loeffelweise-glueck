@@ -14,11 +14,14 @@
     width: 100%;
     text-align: center;
     color: var(--pappe);
+    font-family: "TrashHand";
 }
 
 #bild > span:nth-child(1) {
   /* color: red; */
-  top: 75%;
+  top: 5%;
+  width: auto!important;
+  right: 5%;
 }
 
 #bild > #mehrLesen {
@@ -105,13 +108,15 @@
   text-align: center;
   position: relative;
 }
-#itemContainer > .item > .text > div {
+#itemContainer > .item > .text > .content {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
   padding: 1cm;
+  max-height: 80%;
 }
-#itemContainer > .item > .text > div > h3 {
+#itemContainer > .item > .text > div h3 {
   font-size: 3em;
+  font-family: "TrashHand";
 }

@@ -30,9 +30,21 @@
   /* transform: translate(-50%); */
   font-size: 4.4vmin;
   color: var(--gray);
+  font-family: "TrashHand";
 }
 
-#footer > span {
-  float: right;
+#footer {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#footer > #datenschutz-impressum {
+  /* float: right; */
   color: var(--pappe);
+  margin-right: 2vw;
+  margin-bottom: .5vh;
+  text-decoration: none;
 }
