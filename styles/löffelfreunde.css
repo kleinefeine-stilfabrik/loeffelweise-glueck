@@ -99,6 +99,7 @@
 }
 #itemContainer > .item div.img > .back {
   left: 5px;
+  transform: scaleX(-1) translateY(-50%);
 }
 #itemContainer > .item div.img > .next {
   right: 5px;

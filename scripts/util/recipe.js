@@ -24,10 +24,16 @@ const url = new URL(window.location);
 
 const link = decodeURIComponent(url.pathname).replace(/\/rezepte\/([a-zA-Z0-9öÖüÜäÄ_-]+)\//i, "$1");
 
+const searchParam = url.searchParams.get('search');
+if(searchParam) {
+  const linkBack = document.querySelector('a#back');
+  linkBack.href = `../?search=${encodeURIComponent(decodeURIComponent(searchParam))}`
+}
+
 
 
 async function on_load() {
-  
+
   const name = document.querySelector('#name');
 
   zutaten = document.querySelector('#zutaten .simplebar-content') || document.querySelector('#zutaten');

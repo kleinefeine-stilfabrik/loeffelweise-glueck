@@ -9,6 +9,7 @@
     <script src="/scripts/textExpand.js" defer charset="utf-8"></script>
     <script src="/scripts/util/insert-recipes.js" defer charset="utf-8"></script>
     <script src="/scripts/scrollTop.js" defer charset="utf-8"></script>
+    <script src="/scripts/rezepte.js" defer charset="utf-8"></script>
   </head>
   <body>
     <div id="navbar">
@@ -38,6 +39,16 @@
       Gern lassen wir euch an unseren Rezepten teilhaben und freuen uns, wenn ihr sie selbst ausprobiert. <br>
       Viel Spaß dabei und lasst es euch schmecken! Genießt euer eigenes LÖFFELWEISE GLÜCK...
     </div>
+    <div id="searchContainer">
+      <label for="search">Suchbegriff eingeben</label>
+      <span>
+        <input type="text" id="search" class="deletable" placeholder="#Geburtstag" autofocus>
+        <button type="button" id="delete-search" title="Suche löschen"><i class="fas fa-times"></i></button>
+      </span>
+
+      <!-- <button type="button" id="search-start"><i class="fas fa-search"></i></button> -->
+    </div>
     <div id="recipeContainer"></div>
+    <button type="button" id="loadMore" class="hidden">Mehr Rezepte laden...</button>
   </body>
 </html>

@@ -136,16 +136,56 @@ p {
   /* border-color: #111; */
 }
 #recipeContainer > .recipe > div > .tags {
-  /* position: absolute;
-  bottom: 20px;
+  position: absolute;
+  bottom: 2vh;
   left: 0;
-  right: 0; */
-  padding-top: 10%;
+  right: 0;
+  /* padding-top: 10%; */
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 #recipeContainer > .recipe > div > .tags > * {
   margin: 0 5px;
   font-size: 2vmin;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#searchContainer {
+  background-color: var(--pappe);
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+#searchContainer * {
+  font-size: 2rem;
+}
+
+#searchContainer #delete-search {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#loadMore {
+  background-color: var(--pappe);
+  border: none;
+  padding: 20px;
+  font-size: 2rem;
+  font-family: "TrashHand";
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1cm;
+  width: 90%;
+  cursor: pointer;
+}
+#loadMore.hidden {
+  display: none;
 }

@@ -3,11 +3,11 @@
     "name": "Tomaten-Marmelade",
     "link": "tomaten-marmelade",
     "tags": [
-      "Marmelade",
-      "Chutney",
-      "Salsa",
-      "Tortilla",
-      "Tomate"
+      "marmelade",
+      "chutney",
+      "salsa",
+      "tortilla",
+      "tomate"
     ]
   },
   {
@@ -15,11 +15,11 @@
     "link": "zitronenkuchen-grüne-wiese",
     "tags": [
       "süß",
-      "Kuchen",
-      "Upgrade",
-      "Geburtstag",
-      "Spinat",
-      "Zitrone"
+      "kuchen",
+      "upgrade",
+      "geburtstag",
+      "spinat",
+      "zitrone"
     ]
   },
   {
@@ -27,11 +27,57 @@
     "link": "schoko-muffins-mit-cremigem-kern",
     "tags": [
       "süß",
-      "Kuchen",
-      "Muffin",
-      "Geburtstag",
-      "Party",
-      "Schokolade"
+      "kuchen",
+      "muffin",
+      "geburtstag",
+      "party",
+      "schokolade"
+    ]
+  },
+  {
+    "name": "Zwiebeltarte mit Pflaumen",
+    "link": "zwiebeltarte-mit-pflaumen",
+    "tags": [
+      "upgrade",
+      "update",
+      "herzhaft",
+      "tarte",
+      "herbst",
+      "frankreich",
+      "weißwein",
+      "federweißer",
+      "federroter",
+      "traubensaft",
+      "zwiebeln",
+      "pflaume",
+      "mürbteig"
+    ]
+  },
+  {
+    "name": "Christmas Caprese",
+    "link": "christmas-caprese",
+    "tags": [
+      "herzhaft",
+      "vorspeise",
+      "weihnachten",
+      "mozzarella",
+      "tomaten",
+      "balsamico bianco"
+    ]
+  },
+  {
+    "name": "Zimt-Mascarpone-Torte",
+    "link": "zimt-mascarpone-torte",
+    "tags": [
+      "süß",
+      "kuchen",
+      "torte",
+      "winter",
+      "weihnachten",
+      "mascarpone",
+      "zimt",
+      "spekulatius",
+      "quark"
     ]
   }
 ]
