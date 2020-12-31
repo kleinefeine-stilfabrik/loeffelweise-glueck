@@ -2,27 +2,36 @@
   {
     "name": "Tomaten-Marmelade",
     "link": "tomaten-marmelade",
-    "imglink": "tomatenmarmelade.jpg",
     "tags": [
       "Marmelade",
-      "Tomaten"
-    ],
-    "zutaten": [
-      "1 kg unterschiedlichte Tomaten Sorten",
-      "1 Bio-Zitrone"
+      "Chutney",
+      "Salsa",
+      "Tortilla",
+      "Tomate"
     ]
   },
   {
-    "name": "Apfel-Marmelade",
-    "link": "apfel-marmelade",
-    "imglink": "tomatenmarmelade.jpg",
+    "name": "Zitronenkuchen grüne Wiese",
+    "link": "zitronenkuchen-grüne-wiese",
     "tags": [
-      "Apfel",
-      "Tomaten"
-    ],
-    "zutaten": [
-      "1 kg unterschiedlichte Tomaten Sorten",
-      "1 Bio-Zitrone"
+      "süß",
+      "Kuchen",
+      "Upgrade",
+      "Geburtstag",
+      "Spinat",
+      "Zitrone"
+    ]
+  },
+  {
+    "name": "Schoko-Muffins mit cremigem Kern",
+    "link": "schoko-muffins-mit-cremigem-kern",
+    "tags": [
+      "süß",
+      "Kuchen",
+      "Muffin",
+      "Geburtstag",
+      "Party",
+      "Schokolade"
     ]
   }
 ]

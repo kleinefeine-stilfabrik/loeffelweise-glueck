@@ -1,4 +1,4 @@
 
 document.querySelector('#mehrLesen').addEventListener('click', () => {
-  document.querySelector('#textExpand').classList.remove('closed')
+  document.querySelector('#textExpand').classList.toggle('closed')
 });

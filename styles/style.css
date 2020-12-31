@@ -59,3 +59,19 @@ div.scrollTop {
   color: white;
   cursor: pointer;
 }
+
+
+#hunger h2 {
+  font-size: 15vmin;
+  font-family: "TrashHand";
+  margin-bottom: 5vmin;
+}
+#hunger a {
+  /* text-decoration: overline; */
+  text-decoration-color: var(--pappe_darken);
+  color: var(--gray);
+  font-size: 2vmin;
+}
+#hunger a:hover {
+  color: var(--pappe_darken);
+}

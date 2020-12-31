@@ -19,7 +19,7 @@
 
 #bild > span:nth-child(1) {
   /* color: red; */
-  top: 85%;
+  top: 5%;
   right: 2.5%;
 }
 
@@ -37,8 +37,9 @@
   background-color: var(--pappe);
   width: 90%;
   margin: 0 auto;
-  max-height: 25vh;
-  transition: all 2s;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 2s;
   /* transition: padding 2s; */
   overflow: hidden;
   text-align: center;
@@ -46,6 +47,76 @@
   margin-bottom: 1cm;
 }
 #textExpand.closed {
-  max-height: 0;
+  transform: scaleY(0);
   padding: 0;
+}
+
+#itemContainer {
+  margin-top: 1cm;
+  display: flex;
+  flex-direction: column;
+}
+
+#itemContainer > .item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  /* grid-gap: 10px; */
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1cm;
+  grid-template-areas: "image text";
+  position: relative;
+}
+
+#itemContainer > .item:nth-child(even) {
+  grid-template-areas: "text image";
+}
+
+#itemContainer > .item > .text {
+  background-color: var(--pappe);
+  padding: 10px;
+  grid-area: text;
+}
+
+#itemContainer > .item img, #itemContainer > .item div.img {
+  width: 100%;
+  grid-area: image;
+  position: relative;
+}
+#itemContainer > .item div.img > img.hidden {
+  display: none;
+}
+#itemContainer > .item div.img > .back, #itemContainer > .item div.img > .next {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+#itemContainer > .item div.img > .back {
+  left: 5px;
+}
+#itemContainer > .item div.img > .next {
+  right: 5px;
+}
+#itemContainer > .item > .text {
+  background-color: var(--pappe);
+  grid-area: text;
+  text-align: center;
+  position: relative;
+}
+#itemContainer > .item > .text > .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 1cm;
+  max-height: 80%;
+}
+#itemContainer > .item > .text > div h3 {
+  font-size: 3em;
+  font-family: "TrashHand";
 }

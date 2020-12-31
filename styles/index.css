@@ -26,9 +26,9 @@
   /* top: 87%; */
   bottom: 2%;
   /* left: 51.5vw; */
-  left: 35%;
+  left: 25%;
   /* transform: translate(-50%); */
-  font-size: 4.4vmin;
+  font-size: 6vmin;
   color: var(--gray);
   font-family: "TrashHand";
 }
@@ -36,15 +36,23 @@
 #footer {
   display: flex;
   justify-content: flex-end;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
 }
-#footer > #datenschutz-impressum {
+#footer > #datenschutz-impressum, #footer > #instagram {
   /* float: right; */
   color: var(--pappe);
-  margin-right: 2vw;
   margin-bottom: .5vh;
   text-decoration: none;
+  background-color: var(--gray);
+  padding: 5px;
+  border-radius: 5px;
+}
+#footer > #datenschutz-impressum:hover, #footer > #instagram:hover {
+  color: var(--pappe_darken);
+}
+#footer > #instagram {
+  margin-right: .5vw;
 }

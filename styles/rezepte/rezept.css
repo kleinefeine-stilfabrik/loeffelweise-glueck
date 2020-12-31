@@ -1,8 +1,46 @@
 
+ul {
+  padding-left: 40px;
+}
+
+
 #container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "img zubereitung"
+                                    "zutaten kommentar"
+                                    "tags tags";
+  margin-left: 60px;
+  margin-right: 60px;
   min-height: 80vh;
+  max-height: 100vh;
   grid-gap: 1vmin;
   margin-top: 2.5vmin;
+}
+
+#zubereitung {
+  grid-area: zubereitung;
+}
+#zutaten {
+  grid-area: zutaten;
+}
+#kommentar {
+  grid-area: kommentar;
+}
+#tags {
+  grid-area: tags;
+}
+#img {
+  grid-area: img;
+  display: block;
+  max-height: 50vh;
+  max-width: 100%;
+  margin: 0 auto;
+  /* margin-left: 40px; */
+}
+
+#container > *:not(img) {
+  background-color: var(--pappe);
+  padding: 15px;
 }
