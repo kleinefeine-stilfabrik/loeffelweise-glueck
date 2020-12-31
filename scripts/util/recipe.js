@@ -34,9 +34,9 @@ async function on_load() {
   kommentar = document.querySelector('#kommentar .simplebar-content') || document.querySelector('#kommentar');
 
   const recipeData = (await fetch(`/data/recipes.json`).then(response => response.json())).find(e => e.link == link);
-  const zutatenTxt = await fetch(`/rezepte/${link}/zutaten.txt`).then(response => response.text());
-  const zubereitungTxt = await fetch(`/rezepte/${link}/zubereitung.txt`).then(response => response.text());
-  const kommentarTxt = await fetch(`/rezepte/${link}/kommentar.txt`).then(response => response.text());
+  const zutatenTxt = await fetch(`/rezepte/${link}/Zutaten.txt`).then(response => response.text());
+  const zubereitungTxt = await fetch(`/rezepte/${link}/Zubereitung.txt`).then(response => response.text());
+  const kommentarTxt = await fetch(`/rezepte/${link}/Kommentar.txt`).then(response => response.text());
 
   document.head.querySelector('title').innerText = `${recipeData.name} - Löffelweise Glück`;
   name.innerText = recipeData.name;
