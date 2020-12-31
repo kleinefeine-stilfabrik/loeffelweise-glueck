@@ -7,7 +7,6 @@ document.head.appendChild(scrollScript);
 document.head.appendChild(scrollStyle);
 
 scrollScript.addEventListener('load', () => {
-  const name = document.querySelector('#name');
   let zutaten = document.querySelector('#zutaten');
   let zubereitung = document.querySelector('#zubereitung');
   let kommentar = document.querySelector('#kommentar');
@@ -28,6 +27,8 @@ const link = decodeURIComponent(url.pathname).replace(/\/rezepte\/([a-zA-Z0-9Ã¶Ã
 
 
 async function on_load() {
+  
+  const name = document.querySelector('#name');
 
   zutaten = document.querySelector('#zutaten .simplebar-content') || document.querySelector('#zutaten');
   zubereitung = document.querySelector('#zubereitung .simplebar-content') || document.querySelector('#zubereitung');
