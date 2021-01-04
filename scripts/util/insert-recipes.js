@@ -1,6 +1,7 @@
 const TABSPACE = "&nbsp;";
 const RECIPEAMOUNT = 10;
 let recipeAmount = RECIPEAMOUNT;
+let eeWitzig = false;
 
 const url = new URL(window.location);
 let searchFinal = "";
@@ -40,6 +41,11 @@ fetch('/data/recipes.json')
       recipeAmount += RECIPEAMOUNT;
       refreshRecipes(filterData(recipeData, recipeAmount, search.value));
     });
+    document.querySelector('.scrollTop').addEventListener('contextmenu', ev => {
+      ev.preventDefault();
+      eeWitzig = !eeWitzig;
+      refreshRecipes(filterData(recipeData, recipeAmount, search.value));
+    });
 });
 
 
@@ -64,7 +70,7 @@ function filterData(data, amount = RECIPEAMOUNT, search = '') {
       // if(!((r.test(e.name) && isTag == false && isAuthor == false) || ((r.test(e.author) && isTag == false) && ((e.author != "unnamedDE" || isAuthor) || search.toLowerCase() == "unnamedde")) || (e.keywords.map(eee => r.test(eee)).some(eee => eee == true) && isAuthor == false))) ret = false;
     });
     return ret;
-  });
+  }).filter(e => e.witzig == true || eeWitzig == false);
   if(filtered.length > amount) {
     loadMore.classList.remove('hidden');
   } else {
@@ -82,6 +88,7 @@ function refreshRecipes([recipeData, fullData]) {
   recipeData.forEach(r => {
     const recipe = document.createElement('div');
     recipe.classList.add('recipe');
+    if(eeWitzig) recipe.classList.add('witzig');
     const img = document.createElement('img');
     img.src = `/rezepte/${r.link}/img.jpg`;
     recipe.appendChild(img);

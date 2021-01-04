@@ -13,6 +13,7 @@
   {
     "name": "Zitronenkuchen grüne Wiese",
     "link": "zitronenkuchen-grüne-wiese",
+    "witzig": true,
     "tags": [
       "süß",
       "kuchen",
@@ -25,6 +26,7 @@
   {
     "name": "Schoko-Muffins mit cremigem Kern",
     "link": "schoko-muffins-mit-cremigem-kern",
+    "witzig": true,
     "tags": [
       "süß",
       "kuchen",
@@ -68,6 +70,7 @@
   {
     "name": "Zimt-Mascarpone-Torte",
     "link": "zimt-mascarpone-torte",
+    "witzig": true,
     "tags": [
       "süß",
       "kuchen",

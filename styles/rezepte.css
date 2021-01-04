@@ -95,6 +95,23 @@ p {
 #recipeContainer > .recipe img {
   width: 100%;
   grid-area: image;
+  position: relative;
+  z-index: 1;
+}
+#recipeContainer > .recipe.witzig::after {
+  content: "";
+  display: inline-block;
+  grid-area: image;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-image: url("/imgs/rezepte/witzig.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
 }
 #recipeContainer > .recipe * {
   color:  var(--gray);
