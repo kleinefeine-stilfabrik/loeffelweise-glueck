@@ -28,6 +28,10 @@ body {
   background-color: var(--gray);
 }
 
+a {
+  color: white;
+}
+
 #navbar {
   margin-top: 2vh;
   display: flex;
