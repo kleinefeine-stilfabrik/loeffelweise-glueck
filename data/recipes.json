@@ -1,16 +1,5 @@
 [
   {
-    "name": "Tomaten-Marmelade",
-    "link": "tomaten-marmelade",
-    "tags": [
-      "marmelade",
-      "chutney",
-      "salsa",
-      "tortilla",
-      "tomate"
-    ]
-  },
-  {
     "name": "Zitronenkuchen grüne Wiese",
     "link": "zitronenkuchen-grüne-wiese",
     "witzig": true,
@@ -21,6 +10,17 @@
       "geburtstag",
       "spinat",
       "zitrone"
+    ]
+  },
+  {
+    "name": "Tomaten-Marmelade",
+    "link": "tomaten-marmelade",
+    "tags": [
+      "marmelade",
+      "chutney",
+      "salsa",
+      "tortilla",
+      "tomate"
     ]
   },
   {
@@ -56,6 +56,153 @@
     ]
   },
   {
+    "name": "Pilz-Päckchen",
+    "link": "pilz-päckchen",
+    "tags": [
+      "herzhaft",
+      "herbst",
+      "gäste",
+      "geburtstag",
+      "buffet",
+      "picknick",
+      "party",
+      "blätterteig",
+      "champignons",
+      "bergkäse",
+      "frischkäse",
+      "kochschinken",
+      "thymian",
+      "backen"
+    ]
+  },
+  {
+    "name": "Feldsalat mit Rote Bete und Waldnüssen",
+    "link": "feldsalat-mit-rote-bete-und-waldnüssen",
+    "tags": [
+      "herzhaft",
+      "kochen",
+      "salat",
+      "herbst",
+      "winter",
+      "gäste",
+      "vorspeise",
+      "picknick",
+      "feldsalat",
+      "rote bete",
+      "walnüsse",
+      "aceto balsamico"
+    ]
+  },
+  {
+    "name": "Chili con Carne mit Schokolade",
+    "link": "chili-con-carne-mit-schokolade",
+    "witzig": true,
+    "tags": [
+      "herzhaft",
+      "kochen",
+      "bowl",
+      "one-pot",
+      "upgrade",
+      "party",
+      "schokolade",
+      "kidney-bohnen",
+      "rinderhack",
+      "chili",
+      "creme fraiche",
+      "herbst",
+      "winter",
+      "gäste",
+      "geburtstag"
+    ]
+  },
+  {
+    "name": "Bavette mit Maronen-Creme & karamellisierten Walnüssen",
+    "link": "bavette-mit-maronen-creme-karamellisierten-walnüssen",
+    "tags": [
+      "herzhaft",
+      "pasta",
+      "nudeln",
+      "kochen",
+      "herbst",
+      "winter",
+      "bowl",
+      "maronen",
+      "zwiebeln",
+      "schalotten",
+      "frischkäse",
+      "ricotta",
+      "walnüsse",
+      "koriander",
+      "petersilie"
+    ]
+  },
+  {
+    "name": "Honigmöhren vom Blech",
+    "link": "honigmöhren-vom-blech",
+    "tags": [
+      "herzhaft",
+      "herbst",
+      "winter",
+      "blech",
+      "backen",
+      "kochen",
+      "asiatisch",
+      "beilage",
+      "gemüse",
+      "hauptgericht",
+      "möhren",
+      "honig",
+      "kreuzkümmel"
+    ]
+  },
+  {
+    "name": "Orangen-Kürbissuppe mit Zimt-Croutons",
+    "link": "orangen-kürbissuppe-mit-zimt-croutons",
+    "tags": [
+      "herzhaft",
+      "suppe",
+      "herbst",
+      "winter",
+      "krimidinner",
+      "kürbis",
+      "orange",
+      "ingwer",
+      "zimt",
+      "vorspeise",
+      "weihnachten"
+    ]
+  },
+  {
+    "name": "Granatapfel-Glühwein",
+    "link": "granatapfel-glühwein",
+    "tags": [
+      "süß",
+      "getränk",
+      "winter",
+      "weihnachten",
+      "rotwein",
+      "granatapfel",
+      "orange",
+      "zimt",
+      "sternanis"
+    ]
+  },
+  {
+    "name": "Spritzgebäck",
+    "link": "spritzgebäck",
+    "witzig": true,
+    "tags": [
+      "süß",
+      "backen",
+      "gebäck",
+      "plätzchen",
+      "kekse",
+      "weihnachten",
+      "winter",
+      "schokolade"
+    ]
+  },
+  {
     "name": "Christmas Caprese",
     "link": "christmas-caprese",
     "tags": [
@@ -64,7 +211,7 @@
       "weihnachten",
       "mozzarella",
       "tomaten",
-      "balsamico bianco"
+      "balsamico-bianco"
     ]
   },
   {
@@ -81,6 +228,24 @@
       "zimt",
       "spekulatius",
       "quark"
+    ]
+  },
+  {
+    "name": "Kräuterschweinchen",
+    "link": "kräuterschweinchen",
+    "witzig": true,
+    "tags": [
+      "herzhaft",
+      "backen",
+      "plätzchen",
+      "kekse",
+      "gebäck",
+      "kräuter",
+      "geburtstag",
+      "mitbringsel",
+      "silvester",
+      "frischkäse",
+      "dinkelmehl"
     ]
   }
 ]
