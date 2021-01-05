@@ -99,7 +99,7 @@ function refreshRecipes([recipeData, fullData]) {
     header.innerText = r.name;
     text.appendChild(header);
     let searchSuffix = "";
-    if(searchFinal) searchSuffix = `/?search=${encodeURIComponent(searchFinal)}`;
+    if(search.value) searchSuffix = `/?search=${encodeURIComponent(search.value)}`;
     const link = document.createElement('a');
     const löffelglück = document.createElement('span');
     löffelglück.innerText = 'Löffelglück...';
