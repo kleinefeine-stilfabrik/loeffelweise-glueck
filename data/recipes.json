@@ -254,5 +254,22 @@
       "frischkäse",
       "dinkelmehl"
     ]
+  },
+  {
+    "name": "Snowball Cookies",
+    "link": "snowball_cookies",
+    "witzig": true,
+    "tags": [
+      "süß",
+      "backen",
+      "plätzchen",
+      "kekse",
+      "gebäck",
+      "dinkelmehl",
+      "kokos",
+      "weihnachten",
+      "winter",
+      "mitbringsel"
+    ]
   }
 ]

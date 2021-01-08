@@ -29,7 +29,7 @@ body {
 }
 
 a {
-  color: white;
+  color: #ddd;
 }
 
 #navbar {
@@ -78,4 +78,8 @@ div.scrollTop {
 }
 #hunger a:hover {
   color: var(--pappe_darken);
+}
+
+.trashhand {
+  font-family: "TrashHand";
 }

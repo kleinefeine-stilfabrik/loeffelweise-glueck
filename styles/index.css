@@ -28,7 +28,7 @@
   /* left: 51.5vw; */
   left: 25%;
   /* transform: translate(-50%); */
-  font-size: 6vmin;
+  font-size: 8vmin;
   color: var(--gray);
   font-family: "TrashHand";
 }
