@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rezeptgenerator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="container">
+      <textarea id="data" data-gramm_editor="false">[]</textarea>
+      <div id="recipes">
+        <span id="newBtn">+ Neues Rezept</span>
+      </div>
+      <div id="recipe">
+        <input type="text" id="name" placeholder="Name" autocomplete="off">
+        <input type="text" id="link" placeholder="Link" autocomplete="off">
+        <textarea id="tags" placeholder="Tags" data-gramm_editor="false"></textarea>
+        <button type="button" id="delete">Rezept Löschen</button>
+      </div>
+    </div>
+  </body>
+</html>

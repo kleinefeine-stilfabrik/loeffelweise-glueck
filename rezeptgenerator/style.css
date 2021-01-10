@@ -1,0 +1,46 @@
+body {
+  height: 98vh;
+}
+textarea {
+  resize: none;
+}
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+#container > * {
+  display: block;
+}
+#recipes {
+  border: 1px solid gray;
+  overflow-y: scroll;
+}
+#recipes > span {
+  display: block;
+  padding: 5px;
+  margin-bottom: 1px;
+  background-color: lightgray;
+  cursor: pointer;
+}
+#recipes > span:hover, #recipes > span.active {
+  background-color: gray;
+}
+#recipes > span.drag {
+  background-color: #555;
+  color: #ddd;
+}
+#recipe > #name, #recipe > #link, #recipe > #tags {
+  /* width: 100%; */
+  margin-bottom: 10px;
+}
+#recipe {
+  display: flex;
+  flex-direction: column;
+}
+#recipe > #tags {
+  flex: 1;
+}
