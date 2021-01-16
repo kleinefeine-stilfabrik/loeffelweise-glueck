@@ -3,8 +3,29 @@ ul {
   padding-left: 40px;
 }
 
+body.print #page {
+  display: none;
+}
 
-#container {
+#printBtn {
+  position: fixed;
+  right: .5cm;
+  bottom: .5cm;
+  width: 2cm;
+  height: 2cm;
+  background-color: var(--pappe_darken);
+  border: none;
+  border-radius: 1cm;
+  font-size: 1cm;
+  cursor: pointer;
+  outline: none;
+}
+#printBtn:hover {
+  background-color: #ddd;
+}
+
+
+#page > .container {
   display: grid;
   /* grid-template-columns: 2fr 3fr; */
   grid-template-columns: auto 3fr;
@@ -20,26 +41,26 @@ ul {
   margin-top: 2.5vmin;
 }
 
-#zubereitung {
+#page .zubereitung {
   grid-area: zubereitung;
   max-height: 50vh;
 }
-#zutaten {
+#page .zutaten {
   grid-area: zutaten;
 }
-#zutaten ul > span {
+#page .zutaten ul > span {
   margin-left: -40px;
 }
-#zutaten ul > span.sectionHeader {
+#page .zutaten ul > span.sectionHeader {
   font-weight: bold;
 }
-#kommentar {
+#page .kommentar {
   grid-area: kommentar;
 }
-#tags {
+#page .tags {
   grid-area: tags;
 }
-#img {
+#page .container img {
   grid-area: img;
   display: block;
   max-height: 50vh;
@@ -48,7 +69,49 @@ ul {
   /* margin-left: 40px; */
 }
 
-#container > *:not(img) {
+#page > .container > *:not(img) {
   background-color: var(--pappe);
   padding: 15px;
+}
+
+
+#print {
+  display: none;
+  background-color: white;
+  height: 297mm;
+  width: 210mm;
+  padding: 2cm;
+}
+body.print #print {
+  display: block;
+}
+#print h3 {
+  text-align: center;
+  font-size: 50pt;
+  font-family: "TrashHand";
+  margin-top: -1.5cm;
+}
+
+#print .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "img zutaten"
+                                    "zubereitung zubereitung"
+                                    "kommentar kommentar";
+  grid-row-gap: 1cm;
+  margin-top: 1cm;
+}
+#print .container img {
+  width: 100%;
+  grid-area: img;
+}
+#print .container .zutaten {
+  grid-area: zutaten;
+}
+#print .container .zubereitung {
+  grid-area: zubereitung;
+}
+#print .container .kommentar {
+  grid-area: kommentar;
 }

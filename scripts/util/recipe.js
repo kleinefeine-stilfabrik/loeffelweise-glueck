@@ -7,17 +7,29 @@ document.head.appendChild(scrollScript);
 document.head.appendChild(scrollStyle);
 
 scrollScript.addEventListener('load', () => {
-  let zutaten = document.querySelector('#zutaten');
-  let zubereitung = document.querySelector('#zubereitung');
-  let kommentar = document.querySelector('#kommentar');
+  let zutaten = document.querySelector('#page .zutaten');
+  let zubereitung = document.querySelector('#page .zubereitung');
+  let kommentar = document.querySelector('#page .kommentar');
 
   const scrollContainers = [zutaten, zubereitung, kommentar];
-  scrollContainers.forEach(scr => {
-    new SimpleBar(scr, {
-      autoHide: false
-    });
-  });
+  // scrollContainers.forEach(scr => {
+  //   new SimpleBar(scr, {
+  //     autoHide: false
+  //   });
+  // });
   on_load();
+});
+
+window.addEventListener('beforeprint', () => document.body.classList.add('print'));
+window.addEventListener('afterprint', () => document.body.classList.remove('print'));
+
+document.querySelector('#printBtn').addEventListener('click', () => window.print());
+window.addEventListener('keydown', ev => {
+  // console.log(ev);
+  if(ev.keyCode == 32 || ev.keyCode == 13) { // Space oder Enter
+    ev.preventDefault();
+    window.print();
+  }
 });
 
 const url = new URL(window.location);
@@ -34,11 +46,13 @@ if(searchParam) {
 
 async function on_load() {
 
-  const name = document.querySelector('#name');
+  const name = document.querySelector('#page .name');
 
-  zutaten = document.querySelector('#zutaten .simplebar-content') || document.querySelector('#zutaten');
-  zubereitung = document.querySelector('#zubereitung .simplebar-content') || document.querySelector('#zubereitung');
-  kommentar = document.querySelector('#kommentar .simplebar-content') || document.querySelector('#kommentar');
+  zutaten = document.querySelector('#page .zutaten .simplebar-content') || document.querySelector('#page .zutaten');
+  zubereitung = document.querySelector('#page .zubereitung .simplebar-content') || document.querySelector('#page .zubereitung');
+  kommentar = document.querySelector('#page .kommentar .simplebar-content') || document.querySelector('#page .kommentar');
+  let tags = document.querySelector('#page .tags');
+  let img = document.querySelector('#page .container img');
 
   const recipeData = (await fetch(`/data/recipes.json`).then(response => response.json())).find(e => e.link == link);
   const zutatenTxt = await fetch(`/rezepte/${link}/Zutaten.txt`).then(response => response.text());
@@ -47,16 +61,15 @@ async function on_load() {
 
   document.head.querySelector('title').innerText = `${recipeData.name} - Löffelweise Glück`;
   name.innerText = recipeData.name;
+  document.querySelector('#print .name').innerText = recipeData.name;
 
-  const img = document.createElement('img');
-  img.id = 'img';
   img.src = `/rezepte/${link}/img.jpg`;
-  container.appendChild(img);
+  document.querySelector('#print img').src = `/rezepte/${link}/img.jpg`;
+
   const zutatenHeader = document.createElement('h4');
   if(zutatenTxt.split('\r\n')[0]) zutaten.appendChild(zutatenHeader);
   zutatenHeader.innerText = zutatenTxt.split('\r\n')[0];
   const zutatenList = document.createElement('ul');
-  zutaten.appendChild(zutatenList);
   zutatenTxt.split('\r\n').slice(1).forEach(e => {
     // if(!e || /^\s+$/.test(e)) return;
     let el;
@@ -75,11 +88,18 @@ async function on_load() {
     replaceLinks(el);
     zutatenList.appendChild(el);
   });
+  zutaten.appendChild(zutatenList);
+  document.querySelector('#print .zutaten').appendChild(zutatenList.cloneNode(true));
+
   zubereitung.innerText = zubereitungTxt;
+  document.querySelector('#print .zubereitung').innerText = zubereitungTxt;
   kommentar.innerText = kommentarTxt;
+  document.querySelector('#print .kommentar').innerText = kommentarTxt;
 
   replaceLinks(zubereitung);
+  replaceLinks(document.querySelector('#print .zubereitung'));
   replaceLinks(kommentar);
+  replaceLinks(document.querySelector('#print .kommentar'));
 
   recipeData.tags.forEach((e, i) => {
     const tag = document.createElement('a');
