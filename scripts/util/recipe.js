@@ -52,12 +52,26 @@ async function on_load() {
   img.id = 'img';
   img.src = `/rezepte/${link}/img.jpg`;
   container.appendChild(img);
+  const zutatenHeader = document.createElement('h4');
+  if(zutatenTxt.split('\r\n')[0]) zutaten.appendChild(zutatenHeader);
+  zutatenHeader.innerText = zutatenTxt.split('\r\n')[0];
   const zutatenList = document.createElement('ul');
   zutaten.appendChild(zutatenList);
-  zutatenTxt.split('\n').forEach(e => {
-    if(!e || /^\s+$/.test(e)) return;
-    const el = document.createElement('li');
-    el.innerText = e;
+  zutatenTxt.split('\r\n').slice(1).forEach(e => {
+    // if(!e || /^\s+$/.test(e)) return;
+    let el;
+    if(/^!/.test(e)) {
+      el = document.createElement('span');
+      el.innerText = e.replace(/^!/, '');
+      el.classList.add('sectionHeader');
+    } else if(e == "") {
+      el = document.createElement('span');
+      el.innerText = '\n';
+    } else {
+      el = document.createElement('li');
+      el.innerText = e;
+    }
+
     replaceLinks(el);
     zutatenList.appendChild(el);
   });
