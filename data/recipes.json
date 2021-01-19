@@ -271,5 +271,112 @@
       "winter",
       "mitbringsel"
     ]
+  },
+  {
+    "name": "Senfgratin mit Pastinake & Kartoffeln",
+    "link": "senfgratin-mit-pastinake-und-kartoffeln",
+    "tags": [
+      "veggie",
+      "herzhaft",
+      "kochen",
+      "weißweinessig",
+      "hauptgericht",
+      "garten",
+      "herbst",
+      "winter",
+      "auflauf",
+      "beilage",
+      "gemüse",
+      "weißwein",
+      "thymian",
+      "senf",
+      "pastinake",
+      "kartoffeln"
+    ]
+  },
+  {
+    "name": "Kohl & Pinkel -klassisch-",
+    "link": "kohl-und-pinkel-klassisch",
+    "tags": [
+      "herzhaft",
+      "kochen",
+      "hauptgericht",
+      "kohltour",
+      "garten",
+      "winter",
+      "gemüse",
+      "kartoffeln",
+      "zwiebeln",
+      "kasseler",
+      "piment",
+      "senf"
+    ]
+  },
+  {
+    "name": "Winterlicher Grünkohl-Salat mit Paradiesapfel",
+    "link": "winterlicher-grünkohl-salat-mit-paradiesapfel",
+    "tags": [
+      "veggie",
+      "herzhaft",
+      "kochen",
+      "salat",
+      "kohltour",
+      "bowl",
+      "update",
+      "winter",
+      "gemüse",
+      "grünkohl",
+      "gurke",
+      "avocado",
+      "feta",
+      "honig",
+      "senf"
+    ]
+  },
+  {
+    "name": "Bunter Focaccia-Garten",
+    "link": "bunter-focaccia-garten",
+    "tags": [
+      "gebäck",
+      "dinkelmehl",
+      "kräuter",
+      "tomate",
+      "geburtstag",
+      "party",
+      "mitbringsel",
+      "garten",
+      "winter",
+      "frühling",
+      "sommer",
+      "herbst",
+      "blech",
+      "gemüse",
+      "kürbis",
+      "möhren",
+      "zwiebeln",
+      "petersilie",
+      "schnittlauch",
+      "buffet",
+      "dill",
+      "thymian"
+    ]
+  },
+  {
+    "name": "Blueberry-Crumble",
+    "link": "blueberry-crumble",
+    "tags": [
+      "süß",
+      "backen",
+      "kuchen",
+      "dinkelmehl",
+      "geburtstag",
+      "mitbringsel",
+      "nachtisch",
+      "krimidinner",
+      "weihnachten",
+      "mandeln",
+      "gäste",
+      "england"
+    ]
   }
 ]
