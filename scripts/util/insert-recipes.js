@@ -13,20 +13,24 @@ if(search.value) {
   searchFinal = search.value;
 }
 
+
+const sortOrderBtn = document.querySelector('#sortOrder');
+
+
 const loadMore = document.querySelector('#loadMore');
 
 
 fetch('/data/recipes.json')
   .then(response => response.json())
   .then(recipeData => {
-    refreshRecipes(filterData(recipeData.reverse(), undefined, searchFinal));
+    // refreshRecipes(filterData(sortData(recipeData, Number(sessionStorage.getItem('sortOrder'))), undefined, searchFinal));
     search.addEventListener('input', () => {
       if(search.value) {
         url.searchParams.set('search', encodeURIComponent(search.value));
-        refreshRecipes(filterData(recipeData, recipeAmount, search.value));
+        refreshRecipes(filterData(sortData(recipeData, Number(sessionStorage.getItem('sortOrder'))), recipeAmount, search.value));
       } else {
         url.searchParams.delete('search');
-        refreshRecipes(filterData(recipeData, recipeAmount));
+        refreshRecipes(filterData(sortData(recipeData, Number(sessionStorage.getItem('sortOrder'))), recipeAmount));
       }
       window.history.pushState({}, '', url);
     });
@@ -34,18 +38,54 @@ fetch('/data/recipes.json')
       e.addEventListener('click', () => {
       search.value = '';
       url.searchParams.delete('search');
-      refreshRecipes(filterData(recipeData, recipeAmount));
+      refreshRecipes(filterData(sortData(recipeData, Number(sessionStorage.getItem('sortOrder'))), recipeAmount));
       window.history.pushState({}, '', url);
     })});
     loadMore.addEventListener('click', () => {
       recipeAmount += RECIPEAMOUNT;
-      refreshRecipes(filterData(recipeData, recipeAmount, search.value));
+      refreshRecipes(filterData(sortData(recipeData, Number(sessionStorage.getItem('sortOrder'))), recipeAmount, search.value));
     });
     document.querySelector('.scrollTop').addEventListener('contextmenu', ev => {
       ev.preventDefault();
       eeWitzig = !eeWitzig;
-      refreshRecipes(filterData(recipeData, recipeAmount, search.value));
+      refreshRecipes(filterData(sortData(recipeData, Number(sessionStorage.getItem('sortOrder'))), recipeAmount, search.value));
     });
+    if(!sessionStorage.getItem('sortOrder')) sessionStorage.setItem('sortOrder', 0);
+    else setSortOrder(Number(sessionStorage.getItem('sortOrder')));
+
+    sortOrderBtn.addEventListener('click', () => {
+      setSortOrder((Number(sessionStorage.getItem('sortOrder')) + 1) % 4);
+    });
+
+
+
+
+
+    function setSortOrder(mode) {
+      const modes = [
+        {
+          content: 'aktuell',
+          title: 'Chronologisch absteigend'
+        },
+        {
+          content: 'historisch',
+          title: 'Chronologisch aufsteigend'
+        },
+        {
+          content: 'A <i class="fas fa-utensil-spoon right"></i> Z',
+          title: 'Von A bis Z'
+        },
+        {
+          content: 'A <i class="fas fa-utensil-spoon left"></i> Z',
+          title: 'Von Z bis A'
+        }
+      ];
+      if (mode > modes.length-1) return;
+      sessionStorage.setItem('sortOrder', mode);
+      sortOrderBtn.innerHTML = modes[mode].content;
+      sortOrderBtn.title = modes[mode].title;
+      refreshRecipes(filterData(sortData(recipeData, mode), recipeAmount, search.value));
+    }
 });
 
 
@@ -77,6 +117,23 @@ function filterData(data, amount = RECIPEAMOUNT, search = '') {
     loadMore.classList.add('hidden');
   }
   return [filtered.slice(0, amount), data]
+}
+
+function sortData(data, mode) {
+  if(mode == 0) return Array.from(data).reverse();
+  if(mode == 1) return data;
+  if(mode == 2 || mode == 3) {
+    const sorted = Array.from(data).sort((a, b) => {
+      const nameA = a.name.toUpperCase();
+      const nameB = b.name.toUpperCase();
+      if (nameA < nameB) return -1;
+      if (nameA > nameB) return 1;
+      return 0;
+    });
+    if(mode == 2) return sorted;
+    if(mode == 3) return sorted.reverse();
+  }
+  return data;
 }
 
 

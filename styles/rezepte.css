@@ -206,3 +206,15 @@ p {
 #loadMore.hidden {
   display: none;
 }
+
+#sortOrder {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#sortOrder .right {
+  transform: rotate(45deg);
+}
+#sortOrder .left {
+  transform: rotate(-135deg);
+}
