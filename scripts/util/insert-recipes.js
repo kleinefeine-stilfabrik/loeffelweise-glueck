@@ -58,6 +58,9 @@ fetch('/data/recipes.json')
     });
 
 
+    refreshRecipes(filterData(sortData(recipeData, Number(sessionStorage.getItem('sortOrder'))), recipeAmount, search.value));
+
+
 
 
 
