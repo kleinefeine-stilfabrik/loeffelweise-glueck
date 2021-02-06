@@ -93,7 +93,32 @@
   font-family: "TrashHand";
 }
 
-#geschichtenContainer > .geschichte img {
+/* #geschichtenContainer > .geschichte img {
   width: 100%;
   grid-area: image;
+} */
+
+#geschichtenContainer > .geschichte img, #geschichtenContainer > .geschichte div.img {
+  width: 100%;
+  grid-area: image;
+  position: relative;
+}
+#geschichtenContainer > .geschichte div.img > img.hidden {
+  display: none;
+}
+#geschichtenContainer > .geschichte div.img > .back, #geschichtenContainer > .geschichte div.img > .next {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+#geschichtenContainer > .geschichte div.img > .back {
+  left: 5px;
+  transform: scaleX(-1) translateY(-50%);
+}
+#geschichtenContainer > .geschichte div.img > .next {
+  right: 5px;
 }
