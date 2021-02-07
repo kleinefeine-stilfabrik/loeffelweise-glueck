@@ -147,6 +147,7 @@
   {
     "name": "Hedwig-plumpst-in-den-Schokotopf-Kürbis-Muffins",
     "link": "hedwig-plumpst-in-den-schokotopf-kürbis-muffins",
+    "witzig": true,
     "tags": [
       "süß ",
       "backen",
@@ -268,7 +269,8 @@
       "ingwer",
       "zimt",
       "vorspeise",
-      "weihnachten"
+      "weihnachten",
+      "maus"
     ]
   },
   {
@@ -297,6 +299,7 @@
   {
     "name": "Kohl & Pinkel -klassisch-",
     "link": "kohl-und-pinkel-klassisch",
+    "witzig": true,
     "tags": [
       "herzhaft",
       "kochen",
@@ -445,6 +448,7 @@
   {
     "name": "Apfel liebt Mandel",
     "link": "apfel-liebt-mandel",
+    "witzig": true,
     "tags": [
       "süß",
       "backen",
