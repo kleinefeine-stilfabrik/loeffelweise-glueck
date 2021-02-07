@@ -1,29 +1,80 @@
 [
   {
-    "name": "Zitronenkuchen grüne Wiese",
-    "link": "zitronenkuchen-grüne-wiese",
+    "name": "Christmas Caprese",
+    "link": "christmas-caprese",
+    "tags": [
+      "herzhaft",
+      "vorspeise",
+      "weihnachten",
+      "mozzarella",
+      "tomaten",
+      "balsamico-bianco"
+    ]
+  },
+  {
+    "name": "Spritzgebäck",
+    "link": "spritzgebäck",
+    "witzig": true,
+    "tags": [
+      "süß",
+      "backen",
+      "gebäck",
+      "plätzchen",
+      "kekse",
+      "weihnachten",
+      "winter",
+      "schokolade"
+    ]
+  },
+  {
+    "name": "Zimt-Mascarpone-Torte",
+    "link": "zimt-mascarpone-torte",
     "witzig": true,
     "tags": [
       "süß",
       "kuchen",
-      "update",
-      "geburtstag",
-      "spinat",
-      "zitrone"
+      "torte",
+      "winter",
+      "weihnachten",
+      "mascarpone",
+      "zimt",
+      "spekulatius",
+      "quark"
     ]
   },
   {
-    "name": "Tomaten-Marmelade",
-    "link": "tomaten-marmelade",
+    "name": "Snowball Cookies",
+    "link": "snowball-cookies",
+    "witzig": true,
+    "tags": [
+      "süß",
+      "backen",
+      "plätzchen",
+      "kekse",
+      "gebäck",
+      "dinkelmehl",
+      "kokos",
+      "weihnachten",
+      "winter",
+      "mitbringsel"
+    ]
+  },
+  {
+    "name": "Kräuterschweinchen",
+    "link": "kräuterschweinchen",
+    "witzig": true,
     "tags": [
       "herzhaft",
-      "marmelade",
-      "chutney",
-      "salsa",
-      "tortilla",
-      "picknick",
-      "garten",
-      "tomate"
+      "backen",
+      "plätzchen",
+      "kekse",
+      "gebäck",
+      "kräuter",
+      "geburtstag",
+      "mitbringsel",
+      "silvester",
+      "frischkäse",
+      "dinkelmehl"
     ]
   },
   {
@@ -60,6 +111,20 @@
     ]
   },
   {
+    "name": "Tomaten-Marmelade",
+    "link": "tomaten-marmelade",
+    "tags": [
+      "herzhaft",
+      "marmelade",
+      "chutney",
+      "salsa",
+      "tortilla",
+      "picknick",
+      "garten",
+      "tomate"
+    ]
+  },
+  {
     "name": "Pilz-Päckchen",
     "link": "pilz-päckchen",
     "tags": [
@@ -77,6 +142,33 @@
       "kochschinken",
       "thymian",
       "backen"
+    ]
+  },
+  {
+    "name": "Hedwig-plumpst-in-den-Schokotopf-Kürbis-Muffins",
+    "link": "hedwig-plumpst-in-den-schokotopf-kürbis-muffins",
+    "tags": [
+      "süß ",
+      "backen",
+      "gebäck",
+      "kuchen",
+      "muffin ",
+      "harry-potter ",
+      "herbst ",
+      "halloween",
+      "dinkelmehl",
+      "rosinen",
+      "kürbis",
+      "zimt",
+      "mitbringsel",
+      "buffet",
+      "geburtstag",
+      "garten",
+      "picknick",
+      "winter",
+      "herbst",
+      "schokolade",
+      "zettelz"
     ]
   },
   {
@@ -180,99 +272,6 @@
     ]
   },
   {
-    "name": "Granatapfel-Glühwein",
-    "link": "granatapfel-glühwein",
-    "tags": [
-      "süß",
-      "getränk",
-      "winter",
-      "weihnachten",
-      "rotwein",
-      "granatapfel",
-      "orange",
-      "zimt",
-      "sternanis"
-    ]
-  },
-  {
-    "name": "Spritzgebäck",
-    "link": "spritzgebäck",
-    "witzig": true,
-    "tags": [
-      "süß",
-      "backen",
-      "gebäck",
-      "plätzchen",
-      "kekse",
-      "weihnachten",
-      "winter",
-      "schokolade"
-    ]
-  },
-  {
-    "name": "Christmas Caprese",
-    "link": "christmas-caprese",
-    "tags": [
-      "herzhaft",
-      "vorspeise",
-      "weihnachten",
-      "mozzarella",
-      "tomaten",
-      "balsamico-bianco"
-    ]
-  },
-  {
-    "name": "Zimt-Mascarpone-Torte",
-    "link": "zimt-mascarpone-torte",
-    "witzig": true,
-    "tags": [
-      "süß",
-      "kuchen",
-      "torte",
-      "winter",
-      "weihnachten",
-      "mascarpone",
-      "zimt",
-      "spekulatius",
-      "quark"
-    ]
-  },
-  {
-    "name": "Kräuterschweinchen",
-    "link": "kräuterschweinchen",
-    "witzig": true,
-    "tags": [
-      "herzhaft",
-      "backen",
-      "plätzchen",
-      "kekse",
-      "gebäck",
-      "kräuter",
-      "geburtstag",
-      "mitbringsel",
-      "silvester",
-      "frischkäse",
-      "dinkelmehl"
-    ]
-  },
-  {
-    "name": "Snowball Cookies",
-    "link": "snowball-cookies",
-    "witzig": true,
-    "tags": [
-      "süß",
-      "backen",
-      "plätzchen",
-      "kekse",
-      "gebäck",
-      "dinkelmehl",
-      "kokos",
-      "weihnachten",
-      "winter",
-      "mitbringsel"
-    ]
-  },
-  {
     "name": "Senfgratin mit Pastinake & Kartoffeln",
     "link": "senfgratin-mit-pastinake-und-kartoffeln",
     "tags": [
@@ -291,7 +290,8 @@
       "thymian",
       "senf",
       "pastinake",
-      "kartoffeln"
+      "kartoffeln",
+      "hobel"
     ]
   },
   {
@@ -336,6 +336,21 @@
     ]
   },
   {
+    "name": "Granatapfel-Glühwein",
+    "link": "granatapfel-glühwein",
+    "tags": [
+      "süß",
+      "getränk",
+      "winter",
+      "weihnachten",
+      "rotwein",
+      "granatapfel",
+      "orange",
+      "zimt",
+      "sternanis"
+    ]
+  },
+  {
     "name": "Bunter Focaccia-Garten",
     "link": "bunter-focaccia-garten",
     "tags": [
@@ -364,6 +379,19 @@
     ]
   },
   {
+    "name": "Zitronenkuchen grüne Wiese",
+    "link": "zitronenkuchen-grüne-wiese",
+    "witzig": true,
+    "tags": [
+      "süß",
+      "kuchen",
+      "update",
+      "geburtstag",
+      "spinat",
+      "zitrone"
+    ]
+  },
+  {
     "name": "Blueberry-Crumble",
     "link": "blueberry-crumble",
     "tags": [
@@ -389,6 +417,100 @@
       "vogelfutter",
       "torte",
       "muffins"
+    ]
+  },
+  {
+    "name": "Hähnchen mit Dattelspinatfüllung",
+    "link": "hähnchen-mit-dattelspinatfüllung",
+    "tags": [
+      "herzhaft",
+      "kochen",
+      "kräuter",
+      "rosmarin",
+      "tomaten",
+      "hauptgericht",
+      "gäste",
+      "krimidinner",
+      "one pot",
+      "herbst",
+      "winter",
+      "blech",
+      "kreuzkümmel ",
+      "spinat",
+      "zwiebeln",
+      "hähnchen",
+      "rote bete"
+    ]
+  },
+  {
+    "name": "Apfel liebt Mandel",
+    "link": "apfel-liebt-mandel",
+    "tags": [
+      "süß",
+      "backen",
+      "gebäck ",
+      "kuchen",
+      "apfel",
+      "apfelkuchen",
+      "mandel ",
+      "vanille ",
+      "zimt",
+      "dinkelmehl",
+      "garten",
+      "herbst",
+      "honig",
+      "gäste"
+    ]
+  },
+  {
+    "name": "Pasta mit Tomaten-Ingwer-Sugo",
+    "link": "pasta-mit-tomaten-ingwer-sugo",
+    "tags": [
+      "veggie",
+      "herzhaft",
+      "kochen",
+      "kräuter",
+      "basilikum",
+      "hauptgericht",
+      "garten",
+      "sommer",
+      "gemüse ",
+      "update ",
+      "bowl ",
+      "pasta",
+      "nudeln",
+      "knoblauch ",
+      "schnell",
+      "tomate ",
+      "zwiebel ",
+      "ingwer ",
+      "orange ",
+      "hobel"
+    ]
+  },
+  {
+    "name": "Apfel-Ziegenkäse-Burger",
+    "link": "apfel-ziegenkäse-burger",
+    "tags": [
+      "herzhaft",
+      "süß",
+      "kochen",
+      "backen",
+      "kräuter",
+      "thymian",
+      "balsamico-bianco",
+      "vorspeise",
+      "herbst",
+      "winter",
+      "orange",
+      "honig",
+      "haselnüsse",
+      "update",
+      "salat",
+      "gäste",
+      "senf",
+      "apfel",
+      "ziegenkäse"
     ]
   }
 ]
