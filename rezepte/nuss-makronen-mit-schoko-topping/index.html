@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rezepte - Löffelweise Glück</title>
+    <link rel="stylesheet" href="/styles/fontawesome.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/rezepte.css">
+    <script src="/scripts/textExpand.js" defer charset="utf-8"></script>
+    <script src="/scripts/util/insert-recipes.js" defer charset="utf-8"></script>
+    <script src="/scripts/scrollTop.js" defer charset="utf-8"></script>
+    <script src="/scripts/rezepte.js" defer charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="..">willkommen.</a>
+      <a href="#">rezepte.</a>
+      <a href="/geschichten">geschichten.</a>
+      <a href="/nicole_jette">nicole & jette.</a>
+      <a href="/loeffelfreunde">löffelfreu(n)de.</a>
+      <a href="/leseglueck">leseglück.</a>
+    </div>
+    <p>
+
+    </p>
+    <!-- <img src="/imgs/rezepte/zettelZ.jpg" alt="" id="zettelZ"> -->
+    <div id="bild">
+      <span>Schokobraun, tomatenrot, spinatgrün oder eigelb....</span>
+      <span id="mehrLesen">mehr lesen <br> <i class="fas fa-utensil-spoon"></i></span>
+      <!-- <i class="fab fa-readme"></i> -->
+    </div>
+    <div id="textExpand" class="closed">
+      In unserer Küche geht es immer bunt zu! <br>
+      Dabei sind wir überhaupt nicht darauf festgelegt, dass Spinat nur gekocht und mit Schokolade nur gebacken wird. <br>
+      Tomaten kann man auch als Marmelade auf ein Käsebrot streichen... <br>
+      Es herrscht (fast) immer gute Laune, wenn wir Kochlöffel oder Teigschaber schwingen. <br>
+      Meist läuft Musik, wenn sich die Schneebesen im Takt bewegen. <br>
+      Tretet ein in Jettes kleines Backstübchen und in Nicoles kulinarisches Atelier. <br>
+      Gern lassen wir euch an unseren Rezepten teilhaben und freuen uns, wenn ihr sie selbst ausprobiert. <br>
+      Viel Spaß dabei und lasst es euch schmecken! Genießt euer eigenes LÖFFELWEISE GLÜCK...
+    </div>
+    <div id="searchContainer">
+      <label for="search">Suchbegriff eingeben</label>
+      <span>
+        <button type="button" id="sortOrder" title="Chronologisch absteigend
+        " data-sort="0">Aktuell</button>
+        <input type="text" id="search" class="deletable" placeholder="#Geburtstag" autofocus>
+        <button type="button" id="delete-search" title="Suche löschen"><i class="fas fa-times"></i></button>
+      </span>
+
+      <!-- <button type="button" id="search-start"><i class="fas fa-search"></i></button> -->
+    </div>
+    <div id="recipeContainer"></div>
+    <button type="button" id="loadMore" class="hidden">Mehr Rezepte laden...</button>
+  </body>
+</html>
