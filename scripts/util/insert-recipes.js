@@ -122,13 +122,33 @@ function filterData(data, amount = RECIPEAMOUNT, search = '') {
   return [filtered.slice(0, amount), data]
 }
 
+const umlautMap = {
+  '\u00dc': 'Ue',
+  '\u00c4': 'Ae',
+  '\u00d6': 'Oe',
+  '\u00fc': 'ue',
+  '\u00e4': 'ae',
+  '\u00f6': 'oe',
+  '\u00df': 'ss',
+}
+function replaceUmlaute(str) {
+  return str
+    .replace(/[\u00dc|\u00c4|\u00d6][a-z]/g, (a) => {
+      const big = umlautMap[a.slice(0, 1)];
+      return big.charAt(0) + big.charAt(1).toLowerCase() + a.slice(1);
+    })
+    .replace(new RegExp('['+Object.keys(umlautMap).join('|')+']',"g"),
+      (a) => umlautMap[a]
+    );
+}
+
 function sortData(data, mode) {
   if(mode == 0) return Array.from(data).reverse();
   if(mode == 1) return data;
   if(mode == 2 || mode == 3) {
     const sorted = Array.from(data).sort((a, b) => {
-      const nameA = a.name.toUpperCase();
-      const nameB = b.name.toUpperCase();
+      const nameA = replaceUmlaute(a.name).toUpperCase();
+      const nameB = replaceUmlaute(b.name).toUpperCase();
       if (nameA < nameB) return -1;
       if (nameA > nameB) return 1;
       return 0;
