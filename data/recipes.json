@@ -536,5 +536,48 @@
       "makronen",
       "schnell"
     ]
+  },
+  {
+    "name": "Lila-Laune-Suppe",
+    "link": "lila-laune-suppe",
+    "tags": [
+      "veggie",
+      "herzhaft",
+      "kochen",
+      "suppe",
+      "maus",
+      "kräuter",
+      "thymian",
+      "rotkohl",
+      "rote-zwiebeln",
+      "kartoffeln",
+      "apfel",
+      "vorspeise",
+      "garten",
+      "winter",
+      "herbst",
+      "one-pot",
+      "bowl",
+      "gäste",
+      "schmand",
+      "weißwein",
+      ""
+    ]
+  },
+  {
+    "name": "Zupfkuchen mit ganz viel Herz",
+    "link": "zupfkuchen-mit-ganz-viel-herz",
+    "tags": [
+      "süß",
+      "backen",
+      "kuchen",
+      "dinkelmehl",
+      "quark",
+      "valentinstag",
+      "kakao",
+      "mitbringsel",
+      "gäste",
+      "klassiker"
+    ]
   }
 ]
