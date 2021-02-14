@@ -27,8 +27,8 @@ body.print #page {
 
 #page > .container {
   display: grid;
-  /* grid-template-columns: 2fr 3fr; */
-  grid-template-columns: auto 3fr;
+  grid-template-columns: 2fr 3fr;
+  /* grid-template-columns: auto 3fr; */
   grid-template-rows: auto auto;
   grid-template-areas: "img zubereitung"
                                     "zutaten kommentar"
@@ -43,7 +43,7 @@ body.print #page {
 
 #page .zubereitung {
   grid-area: zubereitung;
-  max-height: 50vh;
+  /* max-height: 50vh; */
 }
 #page .zutaten {
   grid-area: zutaten;
@@ -63,8 +63,8 @@ body.print #page {
 #page .container img {
   grid-area: img;
   display: block;
-  max-height: 50vh;
-  /* max-width: 100%; */
+  /* max-height: 50vh; */
+  max-width: 100%;
   margin: 0 auto;
   /* margin-left: 40px; */
 }
@@ -78,7 +78,7 @@ body.print #page {
 #print {
   display: none;
   background-color: white;
-  height: 297mm;
+  min-height: 297mm;
   width: 210mm;
   padding: 2cm;
 }
