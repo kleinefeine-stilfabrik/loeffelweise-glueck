@@ -12,6 +12,33 @@
     ]
   },
   {
+    "name": "Rote-Bete-Suppe mit Gemüse-Crunch",
+    "link": "rote-bete-suppe-mit-gemüse-crunch",
+    "tags": [
+      "veggie",
+      "herzhaft",
+      "kochen",
+      "suppe",
+      "maus",
+      "aceto-balsamico",
+      "vorspeise",
+      "hauptgericht",
+      "krimidinner",
+      "garten",
+      "winter",
+      "weihnachten",
+      "gemüse",
+      "zwiebeln",
+      "knoblauch",
+      "bowl",
+      "one-pot",
+      "gäste",
+      "weißwein",
+      "rote-bete",
+      "kartoffeln"
+    ]
+  },
+  {
     "name": "Spritzgebäck",
     "link": "spritzgebäck",
     "witzig": true,
@@ -318,6 +345,29 @@
     ]
   },
   {
+    "name": "Röst-Rosenkohlsuppe mit karamelliesierten Walnüssen & Chilifäden",
+    "link": "röst-rosenkohlsuppe-mit-karamellisierten-walnüssen-und-chilifäden",
+    "tags": [
+      "veggie",
+      "herzhaft",
+      "kochen",
+      "suppe",
+      "kräuter",
+      "majoran",
+      "hauptgericht",
+      "maus",
+      "garten",
+      "winter",
+      "herbst",
+      "gemüse",
+      "honig",
+      "kartoffeln",
+      "walnüsse",
+      "bowl",
+      "chili"
+    ]
+  },
+  {
     "name": "Winterlicher Grünkohl-Salat mit Paradiesapfel",
     "link": "winterlicher-grünkohl-salat-mit-paradiesapfel",
     "tags": [
@@ -578,6 +628,73 @@
       "mitbringsel",
       "gäste",
       "klassiker"
+    ]
+  },
+  {
+    "name": "Süsskartoffelsüppchen mit Baconchips und löffelweise Cassis",
+    "link": "süsskartoffelsüppchen-mit-baconchips-und-löffelweise-cassis",
+    "tags": [
+      "herzhaft",
+      "kochen",
+      "suppe",
+      "kräuter",
+      "schnittlauch",
+      "party",
+      "gäste",
+      "maus",
+      "vorspeise",
+      "hauptgericht",
+      "maus",
+      "garten",
+      "herbst",
+      "winter",
+      "gemüse",
+      "möhren",
+      "süßkartoffeln",
+      "schalotten",
+      "bowl",
+      "creme-fraîche",
+      "aceto-balsamico"
+    ]
+  },
+  {
+    "name": "Maulwurfkuchen mit vergrabenen Kirschen",
+    "link": "maulwurfkuchen-mit-vergrabenen-kirschen",
+    "tags": [
+      "veggie",
+      "süß",
+      "backen",
+      "kuchen",
+      "torte",
+      "dinkelmehl",
+      "geburtstag",
+      "maus",
+      "schokolade",
+      "kirsche",
+      "sahne",
+      "marzipan"
+    ]
+  },
+  {
+    "name": "Ofen-Köttbullar mit Preiselbeer-Relish",
+    "link": "ofen-köttbullar-mit-preiselbeer-relish",
+    "tags": [
+      "herzhaft",
+      "kochen",
+      "backen",
+      "hauptgericht",
+      "blech",
+      "one-pot",
+      "auflauf",
+      "update",
+      "schweden",
+      "chutney",
+      "rinderhack",
+      "creme-fraîche",
+      "aceto-balsamico",
+      "champignon",
+      "pilze",
+      "gouda"
     ]
   }
 ]
