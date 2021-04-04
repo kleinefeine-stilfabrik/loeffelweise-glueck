@@ -345,7 +345,7 @@
     ]
   },
   {
-    "name": "Röst-Rosenkohlsuppe mit karamelliesierten Walnüssen & Chilifäden",
+    "name": "Röst-Rosenkohlsuppe mit karamellisierten Walnüssen & Chilifäden",
     "link": "röst-rosenkohlsuppe-mit-karamellisierten-walnüssen-und-chilifäden",
     "tags": [
       "veggie",
@@ -473,7 +473,7 @@
     ]
   },
   {
-    "name": "Hähnchen mit Dattelspinatfüllung",
+    "name": "Hähnchen mit Dattel-Spinatfüllung & süßen Beten",
     "link": "hähnchen-mit-dattelspinatfüllung",
     "tags": [
       "herzhaft",
@@ -681,6 +681,7 @@
   {
     "name": "Maulwurfkuchen mit vergrabenen Kirschen",
     "link": "maulwurfkuchen-mit-vergrabenen-kirschen",
+    "witzig": true,
     "tags": [
       "veggie",
       "süß",
@@ -716,6 +717,82 @@
       "champignon",
       "pilze",
       "gouda"
+    ]
+  },
+  {
+    "name": "Schokokuchen mit roter Grütze",
+    "link": "schokokuchen-mit-roter-grütze",
+    "tags": [
+      "süß",
+      "backen",
+      "kuchen",
+      "dinkelmehl",
+      "picknick",
+      "schokolade",
+      "früchte",
+      "gäste",
+      "update",
+      "buffet",
+      "vanille",
+      "schnell",
+      "einfach"
+    ]
+  },
+  {
+    "name": "Wachteleier in Champignon",
+    "link": "wachteleier-in-champignon",
+    "tags": [
+      "veggie",
+      "herzhaft",
+      "vorspeise",
+      "kochen",
+      "kräuter",
+      "champignon",
+      "pilze",
+      "garten",
+      "frühling",
+      "ostern",
+      "beilage",
+      "gemüse",
+      "zwiebeln",
+      "knoblauch",
+      "walnüsse",
+      "salat",
+      "feldsalat",
+      "senf"
+    ]
+  },
+  {
+    "name": "Hasenbrötchen",
+    "link": "hasenbrötchen",
+    "tags": [
+      "süß",
+      "backen",
+      "gebäck",
+      "dinkelmehl",
+      "mitbringsel",
+      "brunch",
+      "ostern",
+      "picknick",
+      "frühling",
+      "gäste"
+    ]
+  },
+  {
+    "name": "Osterlämmchen",
+    "link": "osterlämmchen",
+    "tags": [
+      "süß",
+      "backen",
+      "gebäck",
+      "kuchen",
+      "dinkelmehl",
+      "ostern",
+      "picknick",
+      "brunch",
+      "frühling",
+      "vanille",
+      "update"
     ]
   }
 ]
