@@ -473,7 +473,7 @@
     ]
   },
   {
-    "name": "Hähnchen mit Dattel-Spinatfüllung & süßen Beten",
+    "name": "Hähnchen mit Dattel-Spinatfüllung & süssen Beten",
     "link": "hähnchen-mit-dattelspinatfüllung",
     "tags": [
       "herzhaft",
@@ -793,6 +793,60 @@
       "frühling",
       "vanille",
       "update"
+    ]
+  },
+  {
+    "name": "Bärlauch-Butter",
+    "link": "bärlauch-butter",
+    "tags": [
+      "veggie",
+      "herzhaft",
+      "kräuter",
+      "bärlauch",
+      "grillen",
+      "frühling",
+      "gäste",
+      "schnell",
+      "brot"
+    ]
+  },
+  {
+    "name": "Bärlauch-Cashew-Aufstrich",
+    "link": "bärlauch-cashew-aufstrich",
+    "tags": [
+      "veggie",
+      "herzhaft",
+      "frischkäse",
+      "kräuter",
+      "bärlauch",
+      "cashew",
+      "picknick",
+      "frühling",
+      "gäste",
+      "schnell",
+      "hobel",
+      "brot",
+      "westfälisch"
+    ]
+  },
+  {
+    "name": "Bärlauch-Parmesan-Crêpes",
+    "link": "bärlauch-parmesan-crepes",
+    "tags": [
+      "veggie",
+      "herzhaft",
+      "backen",
+      "dinkelmehl",
+      "kräuter ",
+      "bärlauch",
+      "vorspeise",
+      "frühling",
+      "update",
+      "gäste",
+      "frankreich",
+      "weißwein",
+      "parmesan",
+      "hobel"
     ]
   }
 ]
