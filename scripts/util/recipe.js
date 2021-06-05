@@ -23,7 +23,12 @@ scrollScript.addEventListener('load', () => {
 window.addEventListener('beforeprint', () => document.body.classList.add('print'));
 window.addEventListener('afterprint', () => document.body.classList.remove('print'));
 
-document.querySelector('#printBtn').addEventListener('click', () => window.print());
+const printBtn = document.querySelector('#printBtn');
+printBtn.addEventListener('click', () => window.print());
+printBtn.addEventListener('contextmenu', ev => {
+  ev.preventDefault();
+  document.body.classList.toggle('print');
+});
 window.addEventListener('keydown', ev => {
   // console.log(ev);
   if(ev.keyCode == 32 || ev.keyCode == 13) { // Space oder Enter
