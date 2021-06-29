@@ -80,3 +80,33 @@
   width: 100%;
   grid-area: image;
 }
+
+
+#textContainer > .item div.img {
+  position: relative;
+}
+#textContainer > .item img, #itemContainer > .item div.img {
+  width: 100%;
+  grid-area: image;
+  position: relative;
+}
+#textContainer > .item div.img > img.hidden {
+  display: none;
+}
+
+#textContainer > .item div.img > .back, #textContainer > .item div.img > .next {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+#textContainer > .item div.img > .back {
+  left: 5px;
+  transform: scaleX(-1) translateY(-50%);
+}
+#textContainer > .item div.img > .next {
+  right: 5px;
+}
