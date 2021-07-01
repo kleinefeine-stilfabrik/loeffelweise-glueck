@@ -1043,5 +1043,126 @@
       "picknick",
       "zitrone"
     ]
+  },
+  {
+    "name": "Rhabarber-Flammkuchen",
+    "link": "rhababer-flammkuchen",
+    "tags": [
+      "veggie",
+      "herzhaft",
+      "backen",
+      "frischkäse",
+      "ziegenkäse",
+      "dinkelmehl",
+      "kräuter",
+      "thymian",
+      "rosa-pfeffer",
+      "ahornsirup",
+      "gäste",
+      "rhabarbara",
+      "garten",
+      "sommer",
+      "blech",
+      "zwiebeln",
+      "weißwein",
+      "cidre",
+      "créme-fraîche"
+    ]
+  },
+  {
+    "name": "Rhabarber-Tarte",
+    "link": "rhababer-tarte",
+    "tags": [
+      "süß",
+      "veggie",
+      "backen",
+      "gebäck",
+      "kuchen",
+      "tarte",
+      "dinkelmehl",
+      "schmand",
+      "rhabarbara",
+      "rhabarber",
+      "himbeer",
+      "vanille",
+      "mandeln",
+      "puderzucker",
+      "zitrone",
+      "rosmarin"
+    ]
+  },
+  {
+    "name": "Erdbeer-Joghurt-Tarte",
+    "link": "erdbeer-joghurt-tarte",
+    "tags": [
+      "süß",
+      "veggie",
+      "gebäck",
+      "kuchen",
+      "schokolade",
+      "erdbeere",
+      "joghurt",
+      "garten",
+      "sommer",
+      "gäste",
+      "tarte",
+      "lavendelfeld",
+      "honig",
+      "holunderblüte",
+      "camper"
+    ]
+  },
+  {
+    "name": "Mandel-Macchiato on Ice",
+    "link": "mandel-macchiato on ice",
+    "tags": [
+      "süß",
+      "getränk",
+      "espresso",
+      "kaffee",
+      "garten",
+      "sommer",
+      "nachtisch",
+      "keks",
+      "gäste",
+      "schnell",
+      "alkohol"
+    ]
+  },
+  {
+    "name": "Aprikose-Lavendel-Marmelade",
+    "link": "aprikose-lavendel-marmelade",
+    "tags": [
+      "süß",
+      "frühstück",
+      "lavendel",
+      "lavendelfeld",
+      "aprikose",
+      "mitbringsel",
+      "spoonies",
+      "garten",
+      "picknick",
+      "sommer",
+      "update",
+      "marmelade",
+      "konfitüre",
+      "kräuter"
+    ]
+  },
+  {
+    "name": "Rhabarberkuchen mit Baiserhaube",
+    "link": "rhabarberkuchen-mit-baiserhaube",
+    "tags": [
+      "süß",
+      "veggie",
+      "backen",
+      "kuchen",
+      "torte",
+      "dinkelmehl",
+      "garten",
+      "sommer",
+      "zitrone",
+      "rhabarbara"
+    ]
   }
 ]
