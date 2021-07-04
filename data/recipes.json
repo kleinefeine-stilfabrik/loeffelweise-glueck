@@ -605,6 +605,7 @@
   {
     "name": "Nuss-Makronen mit Schoko-Topping",
     "link": "nuss-makronen-mit-schoko-topping",
+    "witzig": true,
     "tags": [
       "süß",
       "backen",
@@ -757,6 +758,7 @@
   {
     "name": "Schokokuchen mit roter Grütze",
     "link": "schokokuchen-mit-roter-grütze",
+    "witzig": true,
     "tags": [
       "süß",
       "backen",
@@ -800,6 +802,7 @@
   {
     "name": "Hasenbrötchen",
     "link": "hasenbrötchen",
+    "witzig": true,
     "tags": [
       "süß",
       "backen",
@@ -816,6 +819,7 @@
   {
     "name": "Osterlämmchen",
     "link": "osterlämmchen",
+    "witzig": true,
     "tags": [
       "süß",
       "backen",
@@ -996,6 +1000,7 @@
   {
     "name": "Erdbeer-Törtchen",
     "link": "erdbeer-törtchen",
+    "witzig": true,
     "tags": [
       "süß",
       "backen",
@@ -1033,6 +1038,7 @@
   {
     "name": "Zitronenkuchen im Kasten",
     "link": "zitronenkuchen-im-kasten",
+    "witzig": true,
     "tags": [
       "süß",
       "backen",
@@ -1114,7 +1120,7 @@
   },
   {
     "name": "Mandel-Macchiato on Ice",
-    "link": "mandel-macchiato on ice",
+    "link": "mandel-macchiato-on-ice",
     "tags": [
       "süß",
       "getränk",
