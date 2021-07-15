@@ -1171,5 +1171,138 @@
       "zitrone",
       "rhabarbara"
     ]
+  },
+  {
+    "name": "Erdbeer-Chili-Chutney",
+    "link": "erdbeer-chili-chutney",
+    "tags": [
+      "herzhaft",
+      "veggie",
+      "kochen",
+      "erdbeeren",
+      "zwiebeln",
+      "zimt",
+      "balsamico-bianco",
+      "mitbringsel",
+      "vorspeise",
+      "spoonies",
+      "garten",
+      "chili",
+      "picknick",
+      "sommer",
+      "rotwein",
+      "käse",
+      "gäste",
+      "chutney",
+      "ingwer"
+    ]
+  },
+  {
+    "name": "Erdbeersalat an Avocadomus",
+    "link": "erdbeersalat-an-avocadomus",
+    "tags": [
+      "veggie",
+      "süß",
+      "mascarpone",
+      "erdbeere",
+      "avocado",
+      "sahne",
+      "zitrone",
+      "balsamico-bianco",
+      "nachtisch",
+      "dessert",
+      "spoonies",
+      "garten",
+      "sommer",
+      "holunder",
+      "gäste",
+      "schnell"
+    ]
+  },
+  {
+    "name": "Holunderblüten-Sirup",
+    "link": "holunderblüten-sirup",
+    "tags": [
+      "veggie",
+      "süß",
+      "getränk",
+      "holunder",
+      "sommer",
+      "aperitif",
+      "gäste",
+      "prosecco",
+      "sekt",
+      "zitrone",
+      "limette",
+      "alkohol"
+    ]
+  },
+  {
+    "name": "Kartoffelsuppe mit Streifen vom Räucherlachs & Pumpernickel-Würfel",
+    "link": "kartoffelsuppe-mit-streifen-vom-räucherlachs-und-pumpernickel-würfel",
+    "tags": [
+      "herzhaft",
+      "veggie",
+      "kochen",
+      "suppe",
+      "kräuter",
+      "schnittlauch",
+      "gäste",
+      "maus",
+      "garten",
+      "kartoffeln",
+      "zwiebel",
+      "knoblauch",
+      "bowl",
+      "one-pot",
+      "update",
+      "westfälisch",
+      "schnell"
+    ]
+  },
+  {
+    "name": "Rauchfisch-Carbonara an Sepia-Spaghetti",
+    "link": "rauchfisch-carbonara-an-sepia-spaghetti",
+    "tags": [
+      "herzhaft",
+      "kochen",
+      "kräuter",
+      "hauptgericht",
+      "garten",
+      "gemüse",
+      "zucchini",
+      "pasta",
+      "nudeln",
+      "zwiebeln",
+      "italien",
+      "fisch",
+      "parmesan",
+      "oregano",
+      "forelle",
+      "hobel",
+      "schnell"
+    ]
+  },
+  {
+    "name": "Sommer-Tiramisu mit Balsamico-Erdbeeren ",
+    "link": "sommer-tiramisu-mit-balsamico-erdbeeren",
+    "tags": [
+      "süß",
+      "veggie",
+      "dessert",
+      "sommer",
+      "erdbeeren",
+      "mascarpone",
+      "aceto-balsamico",
+      "spoonies",
+      "gäste",
+      "buffet",
+      "brunch",
+      "nachspeise",
+      "kuchen",
+      "garten",
+      "italien",
+      "update"
+    ]
   }
 ]
